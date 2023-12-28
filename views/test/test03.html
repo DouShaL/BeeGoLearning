@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test03</title>
+</head>
+<body>
+------date------<br>
+<!--格式化时间-->
+{{.time_data}}<br>
+{{date .time_data "Y-m-d H:i:s"}}<br>
+
+------compare------<br>
+<!--比较-->
+{{compare 98 97}}<br>
+{{compare 98 98}}<br>
+
+------substr------<br>
+<!--截取字符串-->
+{{substr "一个很长很长很长很长很长很长的字符串" 0 4}}<br>
+
+------map_get------<br>
+<!--针对map获取指定key的值-->
+{{map_get .map_data "name"}}<br>
+{{index .map_data "name"}}<br>
+
+------urlfor------<br>
+<!--根据函数寻找url-->
+{{urlfor "UserController.Get"}}<br>
+<a href="{{urlfor "Test01Controller.Get"}}">test01</a><br>
+<a href="{{urlfor "Test02Controller.Get"}}">test02</a><br>
+<a href="{{urlfor "Test03Controller.Get"}}">test03</a><br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

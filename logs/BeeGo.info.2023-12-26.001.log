@@ -1,0 +1,6 @@
+2023/12/21 16:28:48.231 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2023/12/21 16:28:49.460 [I] [router.go:833]  这是Info日志
+2023/12/21 16:30:46.545 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2023/12/21 16:49:35.019 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2023/12/21 16:51:18.345 [I] [asm_amd64.s:1373]  http server Running on http://:8080
+2023/12/21 16:51:22.431 [I] [asm_amd64.s:1373]  http server Running on http://:8080

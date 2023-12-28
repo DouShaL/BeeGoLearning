@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test02</title>
+</head>
+<body>
+{{.x}} <br>
+{{.y}} <br>
+{{.z}} <br>
+
+------and------<br>
+<!--只要一个为空整体为空，都不为空返回最后一个-->
+{{and .x .y .z}}<br>
+
+------or------<br>
+<!--只要一个不为空，返回第一个不为空，否则返回空-->
+{{or .x .y .z}}<br>
+
+------index------<br>
+{{index .arr 0}} <br>
+{{index .map_data "name"}} <br>
+
+------len------<br>
+{{.arr | len}}<br>
+{{len .arr}}<br>
+
+------not------<br>
+{{.is_ok}}<br>
+{{not .is_ok}}<br>
+
+------eq nq lt le gt ge------<br>
+{{if ge .age 18}}
+    成年
+{{else}}
+    未成年
+{{end}}
+
+
+</body>
+</html>
